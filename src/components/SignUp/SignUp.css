@@ -1,0 +1,14 @@
+
+.form-container {
+    width: 400px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #95a0a7;
+    border-radius: 8px;
+    padding-left: 40px;
+    box-shadow: 0px 0px 3px 3px goldenrod;
+  }
+  
+.text-error {
+    color: rgb(243, 89, 89);
+}
