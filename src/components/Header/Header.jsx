@@ -8,8 +8,10 @@ const Header = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogout = () => {
-    
-  }
+    logOut()
+      .then((result) => {})
+      .catch(console.log(error));
+  };
 
   return (
     <nav className="header">
@@ -21,9 +23,9 @@ const Header = () => {
         <Link to="/login">Login</Link>
         <Link to="/signup">Sign Up</Link>
         {user && (
-          <span>
-            Welcome {user.email}{" "}
-            <button onClick={handleLogout}>Sign Out</button>{" "}
+          <span className="text-color">
+            Welcome {user.email}
+            <button onClick={handleLogout}>Log Out</button>
           </span>
         )}
       </div>
